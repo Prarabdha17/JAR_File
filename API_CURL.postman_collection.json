@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "6de4680a-1f3e-4805-842b-abdde6518044",
+		"name": "API_CURL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37962979"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Roll-Number",
+						"value": "01",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Prarabdha\",\r\n  \"lastName\": \"Dabhade\",\r\n  \"phoneNumber\": 8010630261,\r\n  \"emailId\": \"abcdzyx@gmail.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bfhldevapigw.healthrx.co.in/automation-campus/create/user",
+					"protocol": "https",
+					"host": [
+						"bfhldevapigw",
+						"healthrx",
+						"co",
+						"in"
+					],
+					"path": [
+						"automation-campus",
+						"create",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
